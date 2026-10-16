@@ -1,0 +1,278 @@
+{
+  "experiments": [
+    {
+      "n": 1000,
+      "algorithm": "Linear",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.24242,
+      "worst_comparisons": 1000.0,
+      "worst_time_us": 49.57208,
+      "average_comparisons": 513.79,
+      "average_time_us": 27.399614999999997
+    },
+    {
+      "n": 1000,
+      "algorithm": "Binary (iterative)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.202685,
+      "worst_comparisons": 9.0,
+      "worst_time_us": 1.4150775000000002,
+      "average_comparisons": 8.88,
+      "average_time_us": 1.60235375
+    },
+    {
+      "n": 1000,
+      "algorithm": "Binary (recursive)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.23079249999999998,
+      "worst_comparisons": 9.0,
+      "worst_time_us": 1.6256605,
+      "average_comparisons": 8.88,
+      "average_time_us": 1.7872195
+    },
+    {
+      "n": 10000,
+      "algorithm": "Linear",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.2371,
+      "worst_comparisons": 10000.0,
+      "worst_time_us": 562.69068,
+      "average_comparisons": 5296.58,
+      "average_time_us": 494.110905
+    },
+    {
+      "n": 10000,
+      "algorithm": "Binary (iterative)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.358951,
+      "worst_comparisons": 13.0,
+      "worst_time_us": 3.0997890000000003,
+      "average_comparisons": 12.46,
+      "average_time_us": 2.962347
+    },
+    {
+      "n": 10000,
+      "algorithm": "Binary (recursive)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.253655,
+      "worst_comparisons": 13.0,
+      "worst_time_us": 3.939902,
+      "average_comparisons": 12.46,
+      "average_time_us": 4.3739495
+    },
+    {
+      "n": 100000,
+      "algorithm": "Linear",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.5474,
+      "worst_comparisons": 100000.0,
+      "worst_time_us": 14189.2144,
+      "average_comparisons": 54628.105,
+      "average_time_us": 12742.779825000001
+    },
+    {
+      "n": 100000,
+      "algorithm": "Binary (iterative)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.2155985,
+      "worst_comparisons": 16.0,
+      "worst_time_us": 2.27752,
+      "average_comparisons": 15.845,
+      "average_time_us": 2.7772092500000003
+    },
+    {
+      "n": 100000,
+      "algorithm": "Binary (recursive)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.25663400000000003,
+      "worst_comparisons": 16.0,
+      "worst_time_us": 3.2022109999999997,
+      "average_comparisons": 15.845,
+      "average_time_us": 6.593492250000001
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Linear",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.776,
+      "worst_comparisons": 1000000.0,
+      "worst_time_us": 223190.0736,
+      "average_comparisons": 547570.31,
+      "average_time_us": 117957.76465
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Binary (iterative)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.252709,
+      "worst_comparisons": 19.0,
+      "worst_time_us": 2.751897,
+      "average_comparisons": 19.11,
+      "average_time_us": 3.2719760000000004
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Binary (recursive)",
+      "best_comparisons": 1.0,
+      "best_time_us": 0.22075550000000002,
+      "worst_comparisons": 19.0,
+      "worst_time_us": 3.634788,
+      "average_comparisons": 19.11,
+      "average_time_us": 4.30243
+    }
+  ],
+  "theory": [
+    {
+      "n": 1000,
+      "algorithm": "Linear",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 500.5,
+      "exp_avg": 513.79,
+      "theory_worst": 1000,
+      "exp_worst": 1000.0
+    },
+    {
+      "n": 1000,
+      "algorithm": "Binary (iterative)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 8.97,
+      "exp_avg": 8.88,
+      "theory_worst": 10,
+      "exp_worst": 9.0
+    },
+    {
+      "n": 1000,
+      "algorithm": "Binary (recursive)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 8.97,
+      "exp_avg": 8.88,
+      "theory_worst": 10,
+      "exp_worst": 9.0
+    },
+    {
+      "n": 10000,
+      "algorithm": "Linear",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 5000.5,
+      "exp_avg": 5296.58,
+      "theory_worst": 10000,
+      "exp_worst": 10000.0
+    },
+    {
+      "n": 10000,
+      "algorithm": "Binary (iterative)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 12.29,
+      "exp_avg": 12.46,
+      "theory_worst": 14,
+      "exp_worst": 13.0
+    },
+    {
+      "n": 10000,
+      "algorithm": "Binary (recursive)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 12.29,
+      "exp_avg": 12.46,
+      "theory_worst": 14,
+      "exp_worst": 13.0
+    },
+    {
+      "n": 100000,
+      "algorithm": "Linear",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 50000.5,
+      "exp_avg": 54628.11,
+      "theory_worst": 100000,
+      "exp_worst": 100000.0
+    },
+    {
+      "n": 100000,
+      "algorithm": "Binary (iterative)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 15.61,
+      "exp_avg": 15.85,
+      "theory_worst": 17,
+      "exp_worst": 16.0
+    },
+    {
+      "n": 100000,
+      "algorithm": "Binary (recursive)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 15.61,
+      "exp_avg": 15.85,
+      "theory_worst": 17,
+      "exp_worst": 16.0
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Linear",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 500000.5,
+      "exp_avg": 547570.31,
+      "theory_worst": 1000000,
+      "exp_worst": 1000000.0
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Binary (iterative)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 18.93,
+      "exp_avg": 19.11,
+      "theory_worst": 20,
+      "exp_worst": 19.0
+    },
+    {
+      "n": 1000000,
+      "algorithm": "Binary (recursive)",
+      "theory_best": 1,
+      "exp_best": 1.0,
+      "theory_avg": 18.93,
+      "exp_avg": 19.11,
+      "theory_worst": 20,
+      "exp_worst": 19.0
+    }
+  ],
+  "design_challenge": {
+    "requests_per_hour": 50000,
+    "records": 1000000,
+    "required_rate_per_sec": 13.88888888888889,
+    "strategies": {
+      "Linear": {
+        "per_search_us": 127118.84705000004,
+        "time_for_50k_requests_s": 6355.942352500002,
+        "utilisation_pct": 176.55395423611117
+      },
+      "Binary (iterative)": {
+        "per_search_us": 6.422345999993695,
+        "time_for_50k_requests_s": 0.32111729999968475,
+        "utilisation_pct": 0.008919924999991242
+      },
+      "Binary (recursive)": {
+        "per_search_us": 5.6307579999952395,
+        "time_for_50k_requests_s": 0.281537899999762,
+        "utilisation_pct": 0.007820497222215611
+      },
+      "Hash table (dict)": {
+        "per_search_us": 0.16827200000051334,
+        "time_for_50k_requests_s": 0.008413600000025667,
+        "utilisation_pct": 0.00023371111111182409
+      }
+    },
+    "insort_per_insert_us": 24.98862000010149,
+    "batch_resort_500_records_ms": 199.477004000002,
+    "hash_insert_500_ms": 0.1936889999996083,
+    "memory_list_mb": 8.448728,
+    "memory_dict_mb": 41.943128
+  }
+}
