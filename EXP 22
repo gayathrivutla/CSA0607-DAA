@@ -1,0 +1,16 @@
+def find_kth_positive(arr, k):
+    missing = 0
+    num = 1
+    s = set(arr)
+
+    while True:
+        if num not in s:
+            missing += 1
+
+        if missing == k:
+            return num
+
+        num += 1
+
+print(find_kth_positive([2, 3, 4, 7, 11], 5))
+print(find_kth_positive([1, 2, 3, 4], 2))
