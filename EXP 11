@@ -1,0 +1,26 @@
+def find_paths(m, n, N, i, j):
+    dp = [[0] * n for _ in range(m)]
+    dp[i][j] = 1
+    result = 0
+    mod = 10**9 + 7
+
+    for _ in range(N):
+        next_dp = [[0] * n for _ in range(m)]
+
+        for r in range(m):
+            for c in range(n):
+                ways = dp[r][c]
+
+                for dr, dc in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+                    nr, nc = r + dr, c + dc
+
+                    if not (0 <= nr < m and 0 <= nc < n):
+                        result = (result + ways) % mod
+                    else:
+                        next_dp[nr][nc] = (next_dp[nr][nc] + ways) % mod
+
+        dp = next_dp
+
+    return result
+
+print(find_paths(2, 2, 2, 0, 0))
