@@ -1,0 +1,13 @@
+def champagne_tower(poured, query_row, query_glass):
+    dp = [float(poured)] + [0.0] * query_row
+
+    for row in range(query_row):
+        for j in range(row, -1, -1):
+            excess = max(0, dp[j] - 1) / 2
+            dp[j] = min(1, dp[j])
+            dp[j + 1] += excess
+
+    return min(1, dp[query_glass])
+
+print(champagne_tower(1, 1, 1))
+print(champagne_tower(2, 1, 1))
