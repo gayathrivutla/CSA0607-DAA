@@ -1,0 +1,25 @@
+from itertools import combinations
+
+def knapsack(weights, values, capacity):
+    n = len(weights)
+    best_items = []
+    best_value = 0
+
+    for r in range(n + 1):
+        for items in combinations(range(n), r):
+            weight = sum(weights[i] for i in items)
+            value = sum(values[i] for i in items)
+
+            if weight <= capacity and value > best_value:
+                best_value = value
+                best_items = list(items)
+
+    return best_items, best_value
+
+weights = [2, 3, 1]
+values = [4, 5, 3]
+capacity = 4
+
+items, value = knapsack(weights, values, capacity)
+print("Optimal Selection:", items)
+print("Total Value:", value)
