@@ -1,0 +1,10 @@
+def find_maximum(arr):
+    if len(arr) == 0:
+        return None
+
+    arr = sorted(arr)
+    return arr[-1]
+
+print(find_maximum([]))
+print(find_maximum([5]))
+print(find_maximum([3, 3, 3, 3, 3]))
